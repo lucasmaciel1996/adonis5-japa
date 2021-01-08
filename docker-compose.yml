@@ -5,7 +5,7 @@ services:
     build:
       .
       # context: .
-    command: sh -c 'apk add git && rm -rf /var/cache/apk/*  && node ace migration:run && node ace serve --watch'
+    command: sh -c 'apk add git && rm -rf /var/cache/apk/*  && node ace serve --watch'
     tty: true
     environment:
       ENV_SILENT: 'true'
