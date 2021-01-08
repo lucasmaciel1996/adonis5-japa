@@ -40,6 +40,6 @@ async function startHttpServer() {
  */
 configure({
   files: getTestFiles(),
-  before: [], //[runMigrations, startHttpServer],
+  before: [runMigrations, startHttpServer],
   after: [], //[rollbackMigrations],
 })

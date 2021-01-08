@@ -12,12 +12,13 @@ services:
       APP_KEY: 'Q30chr4pFwBsGfBvmWHZAXB4x1JDbZkz'
 
       DB_CONNECTION: 'pg'
-      DB_DATABASE: 'db-test'
-      DB_USER: 'root'
-      DB_PASSWORD: 'password'
-      DB_PORT: '5555'
+      PG_DB_DATABASE: 'db-test'
+      PG_DB_NAME: 'db-test'
+      PG_USER: 'root'
+      PG_PASSWORD: 'password'
+      PG_PORT: '5555'
 
-      DB_HOST: 'dbtest'
+      PG_HOST: 'dbtest'
 
       HOST: '127.0.0.1'
       PORT: '4000'

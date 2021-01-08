@@ -44,7 +44,7 @@ const databaseConfig: DatabaseConfig & { orm: Partial<OrmConfig> } = {
         database: Env.get('PG_DB_NAME'),
       },
       healthCheck: true,
-      debug: true,
+      debug: Env.get('PG_DB_DEBUG', true),
     },
   },
 
